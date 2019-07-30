@@ -1,4 +1,6 @@
-\projDir\frontend\node_modules
+# VisualStudioCode
+.vscode
+projDir/.vscode
 
 # dependencies
 projDir/frontend/node_modules
