@@ -40,9 +40,12 @@ INSTALLED_APPS = [
 
     'post', # Add
     'rest_framework', # Add
+    'corsheaders', # Add
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',    # Add
+    'django.middleware.common.CommonMiddleware',    # Add
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -128,3 +131,8 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.AllowAny',
     ]
 }
+
+# scripte 안에서의 리소스 요청을 허용할 도메인 추가
+CORS_ORIGIN_WHITELIST = (
+    'http://localhost:3000',
+)

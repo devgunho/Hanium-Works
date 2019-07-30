@@ -1,0 +1,23 @@
+\projDir\frontend\node_modules
+
+# dependencies
+projDir/frontend/node_modules
+projDir/frontend/.pnp
+projDir/frontend/.pnp.js
+
+# testing
+projDir/frontend/coverage
+
+# production
+projDir/frontend/build
+
+# misc
+projDir/frontend/.DS_Store
+projDir/frontend/.env.local
+projDir/frontend/.env.development.local
+projDir/frontend/.env.test.local
+projDir/frontend/.env.production.local
+
+projDir/frontend/npm-debug.log*
+projDir/frontend/yarn-debug.log*
+projDir/frontend/yarn-error.log*
