@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import TodoListTemplate from './components/layout';
 
 class App extends Component {
     state = {
@@ -19,16 +20,12 @@ class App extends Component {
 
     render() {
         return (
-            <div>
-                {this.state.posts.map(item => (
-                    <div key={item.id}>
-                        <h1>{item.title}</h1>
-                        <span>{item.content}</span>
-                    </div>
-                ))}
-            </div>
+            <TodoListTemplate>
+                HI
+            </TodoListTemplate>  
         );
     }
 }
 
 export default App;
+
