@@ -16,12 +16,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 
-import Paper from '@material-ui/core/Paper';
-import InputBase from '@material-ui/core/InputBase';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
-import SearchIcon from '@material-ui/icons/Search';
-
 function MadeWithLove() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
@@ -109,20 +103,6 @@ const TodoListTemplate = () => {
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
               It's Time
             </Typography>
-
-            <Paper className={searchClasses.root}>
-              <IconButton className={searchClasses.iconButton} aria-label="menu">
-                <MenuIcon />
-              </IconButton>
-              <InputBase
-                className={searchClasses.input}
-                placeholder="검색어를 입력해주세요."
-              />
-              <IconButton className={searchClasses.iconButton} aria-label="search">
-                <SearchIcon />
-              </IconButton>
-            </Paper>
-
 
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
               Something short and leading about the collection below—its contents, the creator, etc.
