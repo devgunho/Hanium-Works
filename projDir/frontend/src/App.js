@@ -20,9 +20,7 @@ class App extends Component {
 
     render() {
         return (
-            <TodoListTemplate>
-                HI
-            </TodoListTemplate>  
+            <TodoListTemplate/>
         );
     }
 }

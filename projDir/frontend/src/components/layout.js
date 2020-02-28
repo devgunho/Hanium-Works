@@ -14,19 +14,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import Link from '@material-ui/core/Link';
 
-function MadeWithLove() {
-  return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Built with love by the '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Material-UI
-      </Link>
-      {' team.'}
-    </Typography>
-  );
-}
 const useStyles = makeStyles(theme => ({
   icon: {
     marginRight: theme.spacing(2),
@@ -59,32 +47,10 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-const SearchBarStyles = makeStyles({
-  root: {
-    padding: '2px 4px',
-    display: 'flex',
-    alignItems: 'center',
-    width: 400,
-  },
-  input: {
-    marginLeft: 8,
-    flex: 1,
-  },
-  iconButton: {
-    padding: 10,
-  },
-  divider: {
-    width: 1,
-    height: 28,
-    margin: 4,
-  },
-});
-
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 const TodoListTemplate = () => {
   const classes = useStyles();
-  const searchClasses = SearchBarStyles();
 
   return (
     <React.Fragment>
@@ -103,11 +69,9 @@ const TodoListTemplate = () => {
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
               It's Time
             </Typography>
-
+            React / Material-UI
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              Something short and leading about the collection below—its contents, the creator, etc.
-              Make it short and sweet, but not too short so folks don&apos;t simply skip over it
-              entirely.
+
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
@@ -166,7 +130,6 @@ const TodoListTemplate = () => {
         <Typography variant="subtitle1" align="center" color="textSecondary" component="p">
           Something here to give the footer a purpose!
         </Typography>
-        <MadeWithLove />
       </footer>
       {/* End footer */}
     </React.Fragment>
